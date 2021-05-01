@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="laptop" type="laptopType"/>
+  <xs:complexType name="ColorPricesType">
+    <xs:sequence>
+      <xs:element name="InBlackColor">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="28999.0"/>
+            <xs:enumeration value="27599.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="InGreyColor">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="27500.0"/>
+            <xs:enumeration value="27199.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="InWhiteColor">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="29775.0"/>
+            <xs:enumeration value="27699.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="NumberOfSeries">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="512589038"/>
+            <xs:enumeration value="512764531"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ProcessorGen">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="20"/>
+            <xs:enumeration value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="Display"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="laptopType">
+    <xs:sequence>
+      <xs:element name="Brand">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Asus"/>
+            <xs:enumeration value="HP"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Series">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ROG"/>
+            <xs:enumeration value="Pavilion"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Price">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="28999.0"/>
+            <xs:enumeration value="311299.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="SalePrice">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="26999"/>
+            <xs:enumeration value="27599"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="ColorPricesType" name="ColorPrices"/>
+      <xs:element type="ParametersType" name="Parameters"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

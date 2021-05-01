@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<laptops xmlns:tns="http://Tkachuk/practice7"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://Tkachuk/practice7 input.xsd ">
+    <laptop>
+        <Brand>Asus</Brand>
+        <Series>ROG</Series>
+        <Price>28999.0</Price>
+        <SalePrice>26999</SalePrice>
+        <ColorPrices>
+            <InBlackColor>28999.0</InBlackColor>
+            <InGreyColor>27500.0</InGreyColor>
+            <InWhiteColor>29775.0</InWhiteColor>
+        </ColorPrices>
+        <Parameters>
+            <NumberOfSeries>512589038</NumberOfSeries>
+            <ProcessorGen>20</ProcessorGen>
+            <Display>15.6</Display>
+        </Parameters>
+    </laptop>
+    <laptop>
+        <Brand>HP</Brand>
+        <Series>Pavilion</Series>
+        <Price>311299.0</Price>
+        <SalePrice>27599</SalePrice>
+        <ColorPrices>
+            <InBlackColor>27599.0</InBlackColor>
+            <InGreyColor>27199.0</InGreyColor>
+            <InWhiteColor>27699.0</InWhiteColor>
+        </ColorPrices>
+        <Parameters>
+            <NumberOfSeries>512764531</NumberOfSeries>
+            <ProcessorGen>30</ProcessorGen>
+            <Display>15.6</Display>
+        </Parameters>
+    </laptop>
+</laptops>
