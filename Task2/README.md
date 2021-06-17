@@ -9,11 +9,9 @@ Note: You are not allowed to use any types from java.util package except for the
 1) java.util.Iterator
 
 2) java.util.NoSuchElementException
-
 _______________________
 
 Create Container interface and place it in the root package (com.epam.rd.java.basic.practice2)
-
 _______________________
 
 package com.epam.rd.java.basic.practice2;
@@ -43,16 +41,14 @@ public interface Container extends Iterable<Object> {
 _______________________
 
 Task 1
-
 _______________________
 
 Type names: Array, ArrayImpl
-
 _______________________
 
 1.1 Create Array interface containing the following:
 
-_______________________
+_____________________
 
 package com.epam.rd.java.basic.practice2;  
 
@@ -290,8 +286,3 @@ In case the three elements  A, B, C were added to the container using ‘push’
 
 _______________________
 
-Notes.
-
-1. The result should be presented as a project named Practice2.
-
-2. The root package for all the classes: com.epam.rd.java.basic.practice2
